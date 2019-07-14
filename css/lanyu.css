@@ -1,0 +1,50 @@
+#social .btn i {
+  /*top: 50%;
+  left: 20%;*/
+  font-size: 1.8rem;
+}
+
+.h2, .h4 {
+  font-family: "Marvel", sans-serif;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  color: #2c2c2c;
+  /*font-size: 14px;*/
+  font-family: "Raleway", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-header .page-header-image {
+  z-index: 0;
+}
+
+.profile-page .title {
+  margin-top: -2rem;
+}
+
+#logo img {
+  /*max-width: 80%;*/
+  max-height: 24rem;
+}
+
+.gallery figure.cc-effect .h4 {
+  margin-top: 2rem;
+}
+
+.gallery figure.cc-effect p {
+  text-transform: none;
+}
+
+.h2.title {
+  text-shadow: .2rem .2rem .4rem #000;
+}
