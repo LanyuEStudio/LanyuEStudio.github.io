@@ -306,62 +306,6 @@ table {
     width: 91.666%
   }
 }
-@font-face {
-  font-family: m-icons;
-  src: url(../fonts/m-icons.eot);
-  src: url(../fonts/m-icons.eot?#iefix) format("embedded-opentype"),url(../fonts/m-icons.woff) format("woff"),url(../fonts/m-icons.ttf) format("truetype"),url(../fonts/m-icons.svg#m-icons) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal
-}
-@font-face {
-  font-family: Movistar;
-  src: url(../fonts/apercu_movistar_regular-web.eot);
-  src: url(../fonts/apercu_movistar_regular-web.eot?#iefix) format("embedded-opentype"),url(../fonts/apercu_movistar_regular-web.woff) format("woff"),url(../fonts/apercu_movistar_regular-web.ttf) format("truetype"),url(../fonts/apercu_movistar_regular-web.svg#Movistar) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal
-}
-@font-face {
-  font-family: Movistar;
-  src: url(../fonts/apercu_movistar_bold-web.eot);
-  src: url(../fonts/apercu_movistar_bold-web.eot?#iefix) format("embedded-opentype"),url(../fonts/apercu_movistar_bold-web.woff) format("woff"),url(../fonts/apercu_movistar_bold-web.ttf) format("truetype"),url(../fonts/apercu_movistar_bold-web.svg#Movistar) format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal
-}
-@font-face {
-  font-family: Movistar;
-  src: url(../fonts/apercu_movistar_black-web.eot);
-  src: url(../fonts/apercu_movistar_black-web.eot?#iefix) format("embedded-opentype"),url(../fonts/apercu_movistar_black-web.woff) format("woff"),url(../fonts/apercu_movistar_black-web.ttf) format("truetype"),url(../fonts/apercu_movistar_black-web.svg#Movistar) format("svg");
-  font-weight: 900;
-  font-style: normal;
-  font-stretch: normal
-}
-@font-face {
-  font-family: Telefonica;
-  src: url(../fonts/TelefonicaWeb-Regular.eot);
-  src: url(../fonts/TelefonicaWeb-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/TelefonicaWeb-Regular.woff) format("woff"),url(../fonts/TelefonicaWeb-Regular.ttf) format("truetype"),url(../fonts/TelefonicaWeb-Regular.svg#Telefonica) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal
-}
-@font-face {
-  font-family: Telefonica;
-  src: url(../fonts/TelefonicaWeb-Bold.eot);
-  src: url(../fonts/TelefonicaWeb-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/TelefonicaWeb-Bold.woff) format("woff"),url(../fonts/TelefonicaWeb-Bold.ttf) format("truetype"),url(../fonts/TelefonicaWeb-Bold.svg#Telefonica) format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal
-}
-@font-face {
-  font-family: TelefonicaLight;
-  src: url(../fonts/TelefonicaWeb-Light.eot);
-  src: url(../fonts/TelefonicaWeb-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/TelefonicaWeb-Light.woff) format("woff"),url(../fonts/TelefonicaWeb-Light.ttf) format("truetype"),url(../fonts/TelefonicaWeb-Light.svg#TelefonicaLight) format("svg");
-  font-weight: 100;
-  font-style: normal;
-  font-stretch: normal
-}
 html {
   font-size: 100%;
   overflow-x: hidden
@@ -977,7 +921,7 @@ p.exito.exito-image strong {
 }
 @media only screen and (min-width:62.5em) {
   p.exito.exito-image:before {
-    background: url(../images/icons/gif/love.gif) no-repeat;
+    background: url(http://www.movistarplus.es/assets/images/icons/gif/love.gif) no-repeat;
     position: absolute;
     display: block;
     width: 64px;
@@ -1315,7 +1259,7 @@ a.button-mini {
   font-size: 2.8125rem
 }
 .button-link.button-link-record {
-  background: url(../images/movistar-plus/ico-record.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-record.png) no-repeat 0 0;
   height: 28px
 }
 .button-link.button-link-record span {
@@ -1341,7 +1285,7 @@ a.button-mini {
   height: 22px
 }
 .stars > span {
-  background-image: url(../images/movistar-plus/star-sprite-white.png);
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/star-sprite-white.png);
   background-position: 0 0;
   padding: 0;
   width: 22px;
@@ -1355,7 +1299,7 @@ a.button-mini {
 }
 .stars a,
 .stars div {
-  background-image: url(../images/movistar-plus/star-sprite.png);
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/star-sprite.png);
   background-position: 0 0;
   padding: 0;
   width: 22px;
@@ -1421,7 +1365,7 @@ a.button-mini {
   text-align: center
 }
 .stars-cont span {
-  background-image: url(../images/movistar-plus/star-sprite-white.png);
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/star-sprite-white.png);
   background-position: 0 0;
   padding: 0;
   width: 22px;
@@ -1463,22 +1407,22 @@ a.button-mini {
   vertical-align: middle
 }
 .social a.icon-twitter {
-  background: url(../images/movistar-plus/ico-tw-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-tw-mov.png) no-repeat center
 }
 .social a.icon-facebook {
-  background: url(../images/movistar-plus/ico-fb-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-fb-mov.png) no-repeat center
 }
 .social a.icon-instagram {
-  background: url(../images/movistar-plus/ico-ig-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-ig-mov.png) no-repeat center
 }
 .social a.icon-youtube {
-  background: url(../images/movistar-plus/ico-yt-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-yt-mov.png) no-repeat center
 }
 .social a.icon-google-plus {
-  background: url(../images/movistar-plus/ico-gg-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-gg-mov.png) no-repeat center
 }
 .social a.icon-whatsapp {
-  background: url(../images/movistar-plus/ico-wa-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-wa-mov.png) no-repeat center
 }
 .video-share .social li {
   margin: 0 5px 0 0;
@@ -1495,16 +1439,16 @@ a.button-mini {
   vertical-align: middle
 }
 .video-share .social li a.icon-twitter {
-  background: url(../images/movistar-plus/ico-tw-news-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-tw-news-mov.png) no-repeat center
 }
 .video-share .social li a.icon-facebook {
-  background: url(../images/movistar-plus/ico-fb-news-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-fb-news-mov.png) no-repeat center
 }
 .video-share .social li a.icon-google-plus {
-  background: url(../images/movistar-plus/ico-gg-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-gg-mov.png) no-repeat center
 }
 .video-share .social li a.icon-whatsapp {
-  background: url(../images/movistar-plus/ico-wa-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-wa-mov.png) no-repeat center
 }
 .ee-age span {
   padding: 0;
@@ -1514,34 +1458,34 @@ a.button-mini {
   display: block
 }
 .ee-age .age7 {
-  background-image: url(../images/icons/svg/7.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/7.svg)
 }
 .ee-age .age7i {
-  background-image: url(../images/icons/svg/7i.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/7i.svg)
 }
 .ee-age .age12 {
-  background-image: url(../images/icons/svg/12.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/12.svg)
 }
 .ee-age .age13 {
-  background-image: url(../images/icons/svg/13.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/13.svg)
 }
 .ee-age .age16 {
-  background-image: url(../images/icons/svg/16.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/16.svg)
 }
 .ee-age .age18 {
-  background-image: url(../images/icons/svg/16.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/16.svg)
 }
 .ee-age .ageA {
-  background-image: url(../images/icons/svg/a.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/a.svg)
 }
 .ee-age .ageAi {
-  background-image: url(../images/icons/svg/ai.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/ai.svg)
 }
 .ee-age .ageX {
-  background-image: url(../images/icons/svg/x.svg)
+  background-image: url(http://www.movistarplus.es/assets/images/icons/svg/x.svg)
 }
 .flecha-abajo {
-  background: url(../images/movistar-plus/flecha-izq-blanca.svg) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-izq-blanca.svg) no-repeat 0 0;
   color: #e60a2d;
   width: 20px;
   height: 25px;
@@ -1587,7 +1531,7 @@ a.button-mini {
   padding: 5px
 }
 .record-container .ball-record:after {
-  background: url(../images/icons/svg/record.svg) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/icons/svg/record.svg) no-repeat 0 0;
   content: "";
   position: relative;
   display: block;
@@ -1695,7 +1639,7 @@ a.button-mini {
   cursor: pointer
 }
 .share-video:after {
-  background: url(../images/icons/png/video-share.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/icons/png/video-share.png) no-repeat 0 0;
   content: '';
   position: absolute;
   left: 12px;
@@ -2605,7 +2549,7 @@ ul.box-deportes li.channel a {
   font-size: 1.125rem
 }
 .pase .button-sec .record {
-  background: url(../images/movistar-plus/ico-record.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-record.png) no-repeat 0 0;
   width: 30px;
   height: 28px
 }
@@ -3121,7 +3065,7 @@ ul.box-deportes li.channel a {
   }
 }
 .masthead .search-form span.icon-search:before {
-  background: url(../images/movistar-plus/ico-search.svg) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-search.svg) no-repeat 0 0;
   content: '';
   position: absolute;
   left: 9px;
@@ -3884,7 +3828,7 @@ ul.box-deportes li.channel a {
     left: 0
   }
   .horizonal-slide .slick-prev:before {
-    background: url(../images/movistar-plus/flecha-azules.png) no-repeat center center;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-azules.png) no-repeat center center;
     content: '';
     position: absolute;
     left: 0;
@@ -3896,7 +3840,7 @@ ul.box-deportes li.channel a {
     right: 0
   }
   .horizonal-slide .slick-next:before {
-    background: url(../images/movistar-plus/flecha-azules-der.png) no-repeat center center;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-azules-der.png) no-repeat center center;
     content: '';
     position: absolute;
     left: 0;
@@ -3984,7 +3928,7 @@ video {
   overflow: hidden
 }
 .gallery-item:hover .gallery-image:before {
-  background-image: url(../images/movistar-plus/mas-blanco.svg);
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/mas-blanco.svg);
   content: "";
   position: absolute;
   width: 100%;
@@ -4011,7 +3955,7 @@ video {
   line-height: 4.2
 }
 .gallery-item.gallery-item-video:hover .gallery-image:before {
-  background-image: url(../images/movistar-plus/gallery-play.png)
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/gallery-play.png)
 }
 .gallery-item.gallery-ver-mas {
   background: #fff;
@@ -4602,7 +4546,7 @@ video {
 .legal .mosaic .icon-search.h-alpha-inner:before,
 .mosaic .icon.icon-search:before,
 .mosaic .legal .icon-search.h-alpha-inner:before {
-  content: url(../images/movistar-plus/ico-search.png);
+  content: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-search.png);
   bottom: 7px;
   position: absolute;
   right: 10px
@@ -4620,7 +4564,7 @@ video {
 .mosaic .menu-minisite .legal .h-alpha-inner.bt-menu-minisite:after,
 .mosaic .search .legal .h-alpha-inner.icon-down:after,
 .search .legal .mosaic .h-alpha-inner.icon-down:after {
-  background: url(../images/movistar-plus/flecha-blanca-abajo.png) no-repeat right top;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-blanca-abajo.png) no-repeat right top;
   width: 15px;
   height: 15px
 }
@@ -4649,7 +4593,7 @@ video {
 .legal .mosaic .icon-up.h-alpha-inner:before,
 .mosaic .icon.icon-up,
 .mosaic .legal .icon-up.h-alpha-inner:before {
-  background: url(../images/movistar-plus/flecha-blanca-arriba.png) no-repeat right top;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-blanca-arriba.png) no-repeat right top;
   width: 15px;
   height: 15px
 }
@@ -4971,7 +4915,7 @@ video {
   color: #fff
 }
 #program-list .modal-program-content.error-guia-pdf {
-  background-image: url(../images/movistar-plus/cara-error.png);
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/cara-error.png);
   text-align: center;
   padding: 100px 0;
   background-color: #fff;
@@ -5171,13 +5115,6 @@ video {
   overflow: hidden;
   background: #fff;
   font-size: .9rem
-}
-@font-face {
-  src: url(../fonts/cligrom-webfont.eot);
-  src: url(../fonts/cligrom-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/cligrom-webfont.woff) format("woff"),url(../fonts/cligrom-webfont.ttf) format("truetype"),url(../fonts/cligrom-webfont.svg#Canalplus) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal
 }
 .section-deportes .table-clasi .col-equipos {
   width: 20%;
@@ -5397,7 +5334,7 @@ video {
   }
 }
 .hero-video .mute-button {
-  background: url(../images/mute.png);
+  background: url(http://www.movistarplus.es/assets/images/mute.png);
   background-size: 170px 40px;
   background-position: 0 0;
   background-color: rgba(255,255,255,.6);
@@ -6195,7 +6132,7 @@ video {
   font-size: 1.375rem;
   text-align: center;
   vertical-align: middle;
-  background: url(../images/movistar-plus/ico-tw-news-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-tw-news-mov.png) no-repeat center
 }
 .minisite-news-c .icon-facebook {
   width: 47px;
@@ -6205,7 +6142,7 @@ video {
   font-size: 1.375rem;
   text-align: center;
   vertical-align: middle;
-  background: url(../images/movistar-plus/ico-fb-news-mov.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-fb-news-mov.png) no-repeat center
 }
 .minisite-news-c .recommend {
   padding-left: 15px
@@ -6360,17 +6297,17 @@ video {
 .content-minisite .minisite-fanzone a.button span.icon-twitter {
   width: 25px;
   height: 25px;
-  background: url(../images/movistar-plus/ico-tw-fanzone-mov.png) no-repeat
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-tw-fanzone-mov.png) no-repeat
 }
 .content-minisite .minisite-fanzone a.button span.icon-facebook {
   width: 25px;
   height: 25px;
-  background: url(../images/movistar-plus/ico-fb-fanzone-mov.png) no-repeat
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-fb-fanzone-mov.png) no-repeat
 }
 .content-minisite .minisite-fanzone a.button span.icon-youtube {
   width: 30px;
   height: 25px;
-  background: url(../images/movistar-plus/ico-yt-fanzone-mov.png) no-repeat
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-yt-fanzone-mov.png) no-repeat
 }
 .content-minisite a.button.button-sec {
   background: #0086b9;
@@ -6404,12 +6341,12 @@ video {
   padding-bottom: 50px
 }
 .video-detail-container .social a.ico-twitter {
-  background: url(../images/movistar-plus/ico-tw-news-mov.png) no-repeat center center transparent;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-tw-news-mov.png) no-repeat center center transparent;
   margin-top: 10px;
   display: inline-block
 }
 .video-detail-container .social a.ico-facebook {
-  background: url(../images/movistar-plus/ico-fb-news-mov.png) no-repeat center center transparent;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-fb-news-mov.png) no-repeat center center transparent;
   margin-top: 10px;
   display: inline-block
 }
@@ -6507,12 +6444,12 @@ video {
   color: #fff
 }
 .video-galeria .social a.ico-twitter {
-  background: url(../images/movistar-plus/ico-tw-mov.png) no-repeat center center transparent;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-tw-mov.png) no-repeat center center transparent;
   margin-top: 10px;
   display: inline-block
 }
 .video-galeria .social a.ico-facebook {
-  background: url(../images/movistar-plus/ico-fb-mov.png) no-repeat center center transparent;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-fb-mov.png) no-repeat center center transparent;
   margin-top: 10px;
   display: inline-block
 }
@@ -6631,12 +6568,12 @@ video {
   display: inline-block
 }
 .minisite-video.share .social .ico-twitter {
-  background: url(../images/movistar-plus/ico-tw-news-mov.png) no-repeat center center transparent;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-tw-news-mov.png) no-repeat center center transparent;
   margin-top: 10px;
   display: inline-block
 }
 .minisite-video.share .social .ico-facebook {
-  background: url(../images/movistar-plus/ico-fb-news-mov.png) no-repeat center center transparent;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-fb-news-mov.png) no-repeat center center transparent;
   margin-top: 10px;
   display: inline-block
 }
@@ -6785,7 +6722,7 @@ video {
 .slab-infantil .nav-slider-minisite .pattern-icon .bt-izq:after,
 .slab-otros .nav-slider-minisite .pattern-icon .bt-izq:after,
 .slab-series .nav-slider-minisite .pattern-icon .bt-izq:after {
-  background: url(../images/movistar-plus/fle-blanca-izq.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-blanca-izq.png) no-repeat 0 0;
   background-size: 18px
 }
 .slab-blue .nav-slider-minisite .pattern-icon .bt-dcha:after,
@@ -6796,7 +6733,7 @@ video {
 .slab-infantil .nav-slider-minisite .pattern-icon .bt-dcha:after,
 .slab-otros .nav-slider-minisite .pattern-icon .bt-dcha:after,
 .slab-series .nav-slider-minisite .pattern-icon .bt-dcha:after {
-  background: url(../images/movistar-plus/fle-blanca-der.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-blanca-der.png) no-repeat 0 0;
   background-size: 18px
 }
 .cont-slider-minisite {
@@ -6820,7 +6757,7 @@ video {
   -o-border-radius: 8px
 }
 .cont-slider-minisite .slick-prev:after {
-  background: url(../images/movistar-plus/flecha-azules.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-azules.png) no-repeat 0 0;
   content: '';
   left: 16px
 }
@@ -6838,7 +6775,7 @@ video {
   -o-border-radius: 8px
 }
 .cont-slider-minisite .slick-next:after {
-  background: url(../images/movistar-plus/flecha-azules-der.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-azules-der.png) no-repeat 0 0;
   content: '';
   top: 53px;
   width: 19px;
@@ -7320,7 +7257,7 @@ video {
 }
 @media only screen and (min-width:62.5em) {
   .aviso .aviso-image:before {
-    background: url(../images/icons/gif/error.gif) no-repeat;
+    background: url(http://www.movistarplus.es/assets/images/icons/gif/error.gif) no-repeat;
     position: absolute;
     display: block;
     width: 64px;
@@ -7589,7 +7526,7 @@ video {
   height: 18px;
   display: block;
   margin-top: 5px;
-  background: url(../images/movistar-plus/sms-medium.png) no-repeat center center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/sms-medium.png) no-repeat center center
 }
 .secondary-nav .correo a:hover {
   filter: invert(43%) sepia(98%) saturate(514%) hue-rotate(150deg) brightness(100%) contrast(109%)
@@ -7709,7 +7646,7 @@ video {
   }
   .secondary-nav .primary a.outside:after {
     content: "";
-    background: url(../images/movistar-plus/arrow-header-top.png);
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/arrow-header-top.png);
     position: absolute;
     right: 8px;
     width: 4px;
@@ -7798,7 +7735,7 @@ video {
   }
   .primary-nav .level-1:after,
   .primary-nav .submenu .heading:after {
-    background: url(../images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
     content: '';
     position: absolute;
     right: 22px;
@@ -7885,12 +7822,12 @@ video {
     background: #fff
   }
   .primary-nav .level-1:hover:after {
-    background: url(../images/movistar-plus/ico-arrow-blue.svg) no-repeat 0 0;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-arrow-blue.svg) no-repeat 0 0;
     fill: #50535a;
     background-size: 14px
   }
   .primary-nav .level-1:after {
-    background: url(../images/movistar-plus/ico-arrow-blue.svg) no-repeat 0 0;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-arrow-blue.svg) no-repeat 0 0;
     content: '';
     position: absolute;
     right: 0;
@@ -7918,7 +7855,7 @@ video {
     font-weight: 700
   }
   .primary-nav .is-active .level-1:after {
-    background: url(../images/movistar-plus/ico-arrow-blue.svg) no-repeat 0 0;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-arrow-blue.svg) no-repeat 0 0;
     background-size: 14px
   }
   .primary-nav .is-active .submenu .gi {
@@ -7975,7 +7912,7 @@ video {
   display: table
 }
 .main-menu .icon-menu:after {
-  background: url(../images/movistar-plus/ico-menu.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-menu.png) no-repeat 0 0;
   content: '';
   position: absolute;
   left: 14px;
@@ -7988,7 +7925,7 @@ video {
   content: none
 }
 .main-menu .icon-config:after {
-  background: url(../images/movistar-plus/ico-conf.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-conf.png) no-repeat 0 0;
   content: '';
   position: absolute;
   left: 14px;
@@ -7998,7 +7935,7 @@ video {
   background-size: 25px
 }
 .main-menu .icon-mimovistar:after {
-  background: url(../images/movistar-plus/ico-acceso-mi-movistar.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-acceso-mi-movistar.png) no-repeat 0 0;
   content: '';
   position: absolute;
   left: 14px;
@@ -8008,7 +7945,7 @@ video {
   background-size: 25px
 }
 .main-menu .icon-search:after {
-  background: url(../images/movistar-plus/ico-search-blue.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-search-blue.png) no-repeat 0 0;
   content: '';
   position: absolute;
   left: 14px;
@@ -8115,7 +8052,7 @@ video {
     padding-left: 20px
   }
   .submenu ul li a:after {
-    background: url(../images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
     content: '';
     position: absolute;
     left: 0;
@@ -8221,7 +8158,7 @@ video {
     height: 46px
   }
   .open-mobile-menu .header-top .primary.menu-config li:first-child a:after {
-    background: url(../images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
     content: '';
     position: absolute;
     left: 115px;
@@ -8348,7 +8285,7 @@ video {
   position: relative
 }
 .menu-mobile-icons li.menu-perfil li:first-child a:after {
-  background: url(../images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
   content: '';
   position: absolute;
   left: 85px;
@@ -8551,7 +8488,7 @@ video {
     position: relative
   }
   .submenu-mimovistar .submenu .submenu-content ul li a:after {
-    background: url(../images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-arrow.svg) no-repeat 0 0;
     content: '';
     position: absolute;
     left: 95%;
@@ -9112,7 +9049,7 @@ footer .logo-footer img {
   font-size: 1.375rem;
   text-align: center;
   vertical-align: middle;
-  background: url(../images/movistar-plus/ico-tw-mov.png) no-repeat center;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-tw-mov.png) no-repeat center;
   background-size: 100%;
   float: left
 }
@@ -9124,7 +9061,7 @@ footer .logo-footer img {
   font-size: 1.375rem;
   text-align: center;
   vertical-align: middle;
-  background: url(../images/movistar-plus/ico-fb-mov.png) no-repeat center;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-fb-mov.png) no-repeat center;
   background-size: 100%;
   float: left;
   margin-right: 5px
@@ -9136,7 +9073,7 @@ footer .logo-footer img {
   margin-right: 5px
 }
 .ee .ee-info-2 .list-actions .button-link.button-link-right .icon-play {
-  background-image: url(../images/movistar-plus/ico-ver-en-yomvi.png);
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-ver-en-yomvi.png);
   width: 26px;
   height: 26px;
   vertical-align: middle;
@@ -9382,7 +9319,7 @@ footer .logo-footer img {
     text-align: left
   }
   .ee .temporadas li.is-active a {
-    background-image: url(../images/movistar-plus/flecha-azules-der.png);
+    background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-azules-der.png);
     background-color: #fff;
     background-size: 13px;
     background-position: 98% center;
@@ -9397,7 +9334,7 @@ footer .logo-footer img {
     -moz-border-radius-bottomleft: 6px;
     border-bottom-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    background: url(../images/movistar-plus/fle-blanca-der.png);
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-blanca-der.png);
     background-repeat: no-repeat;
     background-size: 13px;
     background-position: 98% center;
@@ -10164,7 +10101,7 @@ html.js .hide {
   display: block
 }
 .search .no-result:before {
-  background: url(../images/movistar-plus/cara-sin-resultados.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/cara-sin-resultados.png) no-repeat 0 0;
   width: 93px;
   height: 90px;
   left: 40px;
@@ -10183,7 +10120,7 @@ html.js .hide {
   font-weight: 700
 }
 .search .button-link.button-link-right .icon-play {
-  background-image: url(../images/movistar-plus/ico-ver-en-yomvi.png);
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-ver-en-yomvi.png);
   width: 26px;
   height: 26px;
   vertical-align: middle;
@@ -10338,7 +10275,7 @@ html.js .hide {
 }
 @media only screen and (max-width:47.99938em) {
   .search .antetitle-image {
-    background: url(../images/movistar-plus/movistar+-color.svg) no-repeat top right;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/movistar+-color.svg) no-repeat top right;
     margin: 1em;
     background-size: 70px
   }
@@ -10481,7 +10418,7 @@ html.js .hide {
     padding: 0 8px
   }
   .search .brick.slab-white .wrapper {
-    background: url(../images/movistar-plus/movistar+-color.svg) no-repeat top right
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/movistar+-color.svg) no-repeat top right
   }
 }
 @media only screen and (min-width:62.5em) {
@@ -10578,7 +10515,7 @@ html.js .hide {
   font-family: Movistar,Arial,sans-serif
 }
 .error-404 .error-image:before {
-  background: url(../images/movistar-plus/cara-error-grande.png) no-repeat center right #fff;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/cara-error-grande.png) no-repeat center right #fff;
   content: "";
   position: absolute;
   width: 116px;
@@ -10599,7 +10536,7 @@ html.js .hide {
 .error-404 .search-form button .icon.icon-search,
 .error-404 .search-form button .legal .icon-search.h-alpha-inner:before,
 .legal .error-404 .search-form button .icon-search.h-alpha-inner:before {
-  background: url(../images/movistar-plus/search.png) no-repeat center right;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/search.png) no-repeat center right;
   width: 18px;
   vertical-align: top;
   height: 18px;
@@ -10662,7 +10599,7 @@ html.js .hide {
   position: relative
 }
 .error-404 .alert:after {
-  content: url(../images/movistar-plus/404.png);
+  content: url(http://www.movistarplus.es/assets/images/movistar-plus/404.png);
   width: 64px;
   height: 116px;
   display: block;
@@ -10716,7 +10653,7 @@ html.js .hide {
 }
 .error-404 .cross {
   position: absolute;
-  background: url(../images/movistar-plus/cross.jpg) no-repeat center center;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/cross.jpg) no-repeat center center;
   background-size: contain;
   width: 9px;
   height: 8px;
@@ -10828,12 +10765,12 @@ html.js .hide {
   width: 103px;
   height: 103px;
   border-radius: 50%;
-  background: url(../images/movistar-plus/bt-player-minisite.png) center no-repeat rgba(255,255,255,.7);
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/bt-player-minisite.png) center no-repeat rgba(255,255,255,.7);
   position: absolute;
   transition: all .5 ease
 }
 .dest-minisite .bt-player #play-video:hover {
-  background: url(../images/movistar-plus/bt-player-minisite.png) center no-repeat rgba(255,255,255,.5)
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/bt-player-minisite.png) center no-repeat rgba(255,255,255,.5)
 }
 .dest-minisite .bt-player #play-video span {
   display: none
@@ -11467,7 +11404,7 @@ html.js .hide {
   color: #333
 }
 .internal-nav a .internal-next {
-  background: url(../images/movistar-plus/flecha-azules-der.png) no-repeat center right #fff;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-azules-der.png) no-repeat center right #fff;
   width: 10px;
   height: 30px;
   display: inline-block;
@@ -11479,7 +11416,7 @@ html.js .hide {
   content: none
 }
 .internal-nav a .internal-prev {
-  background: url(../images/movistar-plus/flecha-azules.png) no-repeat center left #fff;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/flecha-azules.png) no-repeat center left #fff;
   width: 10px;
   height: 30px;
   display: inline-block;
@@ -11721,7 +11658,7 @@ html.js .hide {
     content: "";
     width: 12px;
     height: 12px;
-    background: url(../images/movistar-plus/fle-bday.png) no-repeat;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-bday.png) no-repeat;
     opacity: .7;
     position: absolute;
     top: -2px;
@@ -11745,7 +11682,7 @@ html.js .hide {
     content: "";
     width: 12px;
     height: 12px;
-    background: url(../images/movistar-plus/fle-bday.png) no-repeat;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-bday.png) no-repeat;
     opacity: .7;
     position: absolute;
     top: -2px;
@@ -12063,7 +12000,7 @@ button::-moz-focus-inner {
   text-decoration: none;
   text-align: center;
   color: #000;
-  background: url(../images/movistar-plus/bt-close.png) no-repeat center #fff;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/bt-close.png) no-repeat center #fff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -12142,11 +12079,11 @@ button::-moz-focus-inner {
   font-size: 3.5rem
 }
 .mfp-arrow-left {
-  background: url(../images/movistar-plus/fle-blanca-izq.png) no-repeat center;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-blanca-izq.png) no-repeat center;
   left: 0
 }
 .mfp-arrow-right {
-  background: url(../images/movistar-plus/fle-blanca-der.png) no-repeat center;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-blanca-der.png) no-repeat center;
   right: 0
 }
 .mfp-iframe-holder {
@@ -12417,7 +12354,7 @@ screen and (max-height:300px) {
   padding-right: 10px
 }
 .guia-ficha .ee .ee-ficha-buttons .record {
-  background: url(../images/movistar-plus/ico-record.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-record.png) no-repeat 0 0;
   width: 28px;
   height: 28px;
   vertical-align: middle;
@@ -12425,7 +12362,7 @@ screen and (max-height:300px) {
   margin: 10px
 }
 .guia-ficha .ee .ee-ficha-buttons .yomvi-icon {
-  background-image: url(../images/movistar-plus/ico-ver-en-yomvi.png);
+  background-image: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-ver-en-yomvi.png);
   width: 26px;
   height: 26px;
   vertical-align: middle;
@@ -12502,7 +12439,7 @@ html.guia-base body {
   font-size: 34px;
   max-width: 1465px;
   font-weight: 400;
-  background: url(../images/movistar-plus/logo-mplus.png) no-repeat center right;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/logo-mplus.png) no-repeat center right;
   font-family: Movistar,Arial,sans-serif;
   font-weight: 700
 }
@@ -12545,7 +12482,7 @@ html.guia-base body {
 }
 .main-guide .container_box.asterisco {
   padding: 0;
-  background: url(../images/movistar-plus/bt-mas.png);
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/bt-mas.png);
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: center center
@@ -12736,7 +12673,7 @@ html.guia-base body {
   height: 42px
 }
 .buscador span.icon-search:before {
-  background: url(../images/movistar-plus/ico-search.svg) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-search.svg) no-repeat 0 0;
   content: '';
   position: absolute;
   left: 11px;
@@ -13089,7 +13026,7 @@ input#calendar {
   display: inline-block
 }
 #form-search-inline.search-form button {
-  background: url(../images/movistar-plus/ico-search-guia-blue.png) no-repeat 0 0;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-search-guia-blue.png) no-repeat 0 0;
   position: absolute;
   right: -5px;
   top: 6px
@@ -13268,7 +13205,7 @@ input#calendar {
   line-height: 15px;
   padding-left: 0;
   text-align: center;
-  background: url(../images/movistar-plus/bg-handle-guia.jpg) no-repeat;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/bg-handle-guia.jpg) no-repeat;
   top: -10px!important;
   cursor: pointer;
   color: #fff;
@@ -13302,7 +13239,7 @@ input#calendar {
   position: absolute;
   right: 0;
   top: 0;
-  background: url(../images/movistar-plus/ico-estreno-guia-plus.png) no-repeat;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-estreno-guia-plus.png) no-repeat;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -13321,7 +13258,7 @@ input#calendar {
   position: absolute;
   right: 0;
   top: 0;
-  background: url(../images/movistar-plus/ico-directo-guia-plus.png) no-repeat;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-directo-guia-plus.png) no-repeat;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -13337,7 +13274,7 @@ input#calendar {
   right: 0;
   top: 0;
   z-index: 999;
-  background: url(../images/movistar-plus/ico-info-guia-plus.png) no-repeat;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/ico-info-guia-plus.png) no-repeat;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -13479,7 +13416,7 @@ input#calendar {
 }
 .main-guide .container_box {
   border-left: 1px solid #e1e1e1;
-  background: url(../images/carita.png);
+  background: url(http://www.movistarplus.es/assets/images/carita.png);
   background-position: 0 50%;
   background-repeat: repeat-x
 }
@@ -13539,7 +13476,7 @@ input#calendar {
   position: relative
 }
 #lista_canales li.solo-fibra .canalimagen:after {
-  background: url(../images/solo-fibra.png) no-repeat;
+  background: url(http://www.movistarplus.es/assets/images/solo-fibra.png) no-repeat;
   content: "";
   position: absolute;
   top: -4px;
@@ -13549,7 +13486,7 @@ input#calendar {
   height: 102px
 }
 #lista_canales li.solo-redes .canalimagen:after {
-  background: url(../images/solo-redes.png) no-repeat;
+  background: url(http://www.movistarplus.es/assets/images/solo-redes.png) no-repeat;
   content: "";
   position: absolute;
   top: -4px;
@@ -13559,7 +13496,7 @@ input#calendar {
   height: 102px
 }
 #lista_canales li.solo-satelite .canalimagen:after {
-  background: url(../images/solo-satelite.png) no-repeat;
+  background: url(http://www.movistarplus.es/assets/images/solo-satelite.png) no-repeat;
   content: "";
   position: absolute;
   top: -4px;
@@ -13774,7 +13711,7 @@ input#calendar {
   background: #f5f5f5
 }
 .pag-guia .ficha button.mfp-close {
-  background: url(../images/movistar-plus/bt-close-w.png) no-repeat center
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/bt-close-w.png) no-repeat center
 }
 #fondo_semana_bot #semana_bot #semana {
   overflow: hidden;
@@ -13985,14 +13922,14 @@ input#calendar {
 }
 #fondo_semana_bot a.descarga-pdf {
   float: right;
-  background: url(../images/movistar-plus/descargar-blue.png) no-repeat 5px 12px;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/descargar-blue.png) no-repeat 5px 12px;
   padding: 13px 120px 15px 35px;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase
 }
 #fondo_semana_bot a.descarga-pdf:hover {
-  background: url(../images/movistar-plus/descargar-blue.png) no-repeat 5px 12px
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/descargar-blue.png) no-repeat 5px 12px
 }
 #fondo_semana_bot #semana_bot > ul {
   float: left
@@ -14051,7 +13988,7 @@ input#calendar {
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
-    background: url(../images/movistar-plus/logo-mplus.png) no-repeat top right;
+    background: url(http://www.movistarplus.es/assets/images/movistar-plus/logo-mplus.png) no-repeat top right;
     background-size: 60px;
     padding: 10px 0
   }
@@ -14081,7 +14018,7 @@ input#calendar {
     font-weight: 400
   }
   .guide-head a {
-    background: url(../images/descargar-pdf.svg) no-repeat;
+    background: url(http://www.movistarplus.es/assets/images/descargar-pdf.svg) no-repeat;
     text-indent: -9999px;
     text-indent: -9999px;
     position: absolute;
@@ -14135,13 +14072,13 @@ input#calendar {
   border-radius: 0
 }
 .parrilla-next {
-  background: url(../images/movistar-plus/fle-blanca-der.png) no-repeat 130px 7px #0086b9;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-blanca-der.png) no-repeat 130px 7px #0086b9;
   background-size: 10px;
   right: 0;
   padding-left: 10px
 }
 .parrilla-prev {
-  background: url(../images/movistar-plus/fle-blanca-izq.png) no-repeat 10px 7px #0086b9;
+  background: url(http://www.movistarplus.es/assets/images/movistar-plus/fle-blanca-izq.png) no-repeat 10px 7px #0086b9;
   background-size: 10px;
   text-align: left;
   padding-left: 40px
@@ -14178,7 +14115,7 @@ input#calendar {
   z-index: 999
 }
 #loadLayer > div {
-  background: url(../images/cargando2.gif) no-repeat;
+  background: url(http://www.movistarplus.es/assets/images/cargando2.gif) no-repeat;
   width: 200px;
   height: 200px;
   position: relative;
