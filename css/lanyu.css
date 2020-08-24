@@ -20,6 +20,7 @@ body {
 
 .page-header .page-header-image {
   z-index: 0;
+  background-size: 100vw 100%;
 }
 
 .profile-page .title {
@@ -52,3 +53,51 @@ footer .title { border: none; }
 .btn-link .fa-rss:hover { color: orange; }
 .btn-link .fa-youtube:hover { color: red; }
 .btn-link.title:hover { color: rgb(163, 0, 163); text-decoration: none;}
+
+footer .h4 {
+  margin-top: 0;
+}
+
+.progress {
+  line-height: inherit;
+}
+
+#portfolio figure .h4 {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+.bg-primary {
+  background-color: var(--site-main-color) !important;
+}
+
+.sidebar-collapse .navbar-collapse::before {
+	background: var(--site-main-color);
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--site-main-color)), color-stop(80%, #000));
+	background: linear-gradient(var(--site-main-color) 0%, #000 80%);
+}
+
+.progress-container.progress-primary .progress-bar {
+  background: var(--site-main-color);
+}
+
+.progress-container.progress-primary .progress {
+  background-color: rgba(var(--site-raw-main-color), 0.2);
+}
+
+.progress-container.progress-primary .progress-value, .progress-container.progress-primary .progress-badge {
+	color: var(--site-main-color);
+}
+
+a, a:hover, a:focus {
+  color: var(--site-main-color);
+}
+
+#social .btn, #social .btn:hover, #social .btn:focus {
+  background-color: var(--site-main-color);
+}
+
+:root {
+  --site-main-color: rgb(128, 0, 126);
+  --site-raw-main-color: 0, 0, 0;
+}
