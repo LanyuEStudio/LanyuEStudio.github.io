@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Lanyu EStudio</title>
-  <meta name="description" content="Oferta de servicios y portfolio del estudio español de desarrollo indie." />
+  <meta name="description" content="Presentación, oferta de servicios y portfolio del estudio español de desarrollo indie. Especializados en APIs, videojuegos, alojamiento web y multimedia." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Lanyu EStudio - Producción y consultoría de productos software, obras culturales y formación." />
   <meta property="og:url" content="https://lanyu.es/" />
-  <meta property="og:description" content="Oferta de servicios y portfolio del estudio español de desarrollo indie. Especializados en APIs, videojuegos, alojamiento web y multimedia." />
+  <meta property="og:description" content="Presentación, oferta de servicios y portfolio del estudio español de desarrollo indie. Especializados en APIs, videojuegos, alojamiento web y multimedia." />
   <meta property="og:site_name" content="Lanyu EStudio" />
   <meta property="og:image" content="https://lanyu.es/imgs/favicon.webp" />
   <meta property="og:image:width" content="192" />
@@ -17,16 +17,19 @@
   <meta property="og:image:type" content="image/webp" />
   <meta property="og:image:alt" content="Logo del estudio formado por trazos dentro de un círculo que lo rodea formado por su nombre" />
   <meta property="og:locale" content="es_ES" />
-  <meta name="twitter:text:title" content="Lanyu EStudio - Estudio de desarrollo de software y videojuegos." />
+  <meta name="twitter:title" content="Lanyu EStudio - Estudio de desarrollo de software y videojuegos." />
   <meta name="twitter:image" content="https://lanyu.es/imgs/favicon.webp" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Presentación, oferta de servicios y portfolio del estudio español de desarrollo indie. Especializados en APIs, videojuegos, alojamiento web y multimedia.">
   <link href="https://fonts.googleapis.com/css?family=Marvel|Raleway&display=swap" rel="stylesheet"> 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link defer href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/lanyu.css" rel="stylesheet">
   <link rel="shortcut icon" href="imgs/favicon.webp" />
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body id="top">
@@ -43,10 +46,10 @@
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">¿Quién somos?</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Destrezas</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-              <!--<li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experiencia</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contacto</a></li>-->
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#service">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#reference">Referencias</a></li>
+              <!--<li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contacto</a></li>-->
             </ul>
           </div>
         </div>
@@ -63,30 +66,18 @@
             <div class="container">
               <div class="content-center">
                 <!--<div class="cc-profile-image"><a href="#"><img src="imgs/Logos/LanyuCirculoRelleno.svg" alt="Image" /></a></div>-->
-                <div id="logo"><img src="imgs/Logos/LanyuVacio.svg" alt="Image" /></div>
+                <div id="logo"><img src="imgs/Logos/LanyuVacio.svg" alt="Logo a trazos en blanco de Lanyu EStudio" /></div>
                 <div class="h2 title">Lanyu EStudio</div>
                 <!--<p class="category text-white">Estudio Español de desarrollo software y hosting web</p>-->
                 <!--<a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>-->
               </div>
             </div>
-            <div id="social" class="section">
+            <div id="social" class="section pb-3">
               <div class="container">
                 <div class="button-container">
-                  <a
-                    class="btn btn-default btn-round btn-lg btn-icon d-none d-md-inline-block" href="http://fb.me/LanyuEStudio" rel="tooltip"
-                    title="Síguenos en Facebook"><i class="fa fa-facebook"></i></a>
-                  <a
-                    class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/LanyuEStudio" rel="tooltip"
-                    title="Síguenos en Twitter"><i class="fa fa-twitter fa-2x"></i></a>
-                  <a
-                    class="btn btn-default btn-round btn-lg btn-icon" href="https://hijosdelspectrum.com" rel="tooltip"
-                    title="Síguenos en Blogger"><i class="fa fa-rss"></i></a>
-                  <a
-                    class="btn btn-default btn-round btn-lg btn-icon" href="https://www.youtube.com/channel/UCM02UBS6SkPfk_fVg1k_9gg" rel="tooltip"
-                    title="Síguenos en YouTube"><i class="fa fa-youtube"></i></a>
-                  <a
-                    class="btn btn-default btn-round btn-lg btn-icon d-none d-sm-inline-block" href="https://github.com/LanyuEStudio" rel="tooltip"
-                    title="Síguenos en GitHub"><i class="fa fa-github fa-2x"></i></a>
+                  <header-rs v-for="rs in rrss"
+                    :rs="rs"
+                    :key="rs.url"></header-rs>
                 </div>
               </div>
             </div>
@@ -100,10 +91,13 @@
               <div class="col-lg-6 col-md-12">
                 <div class="card-body">
                   <div class="h4 mt-0 title">¿Quién somos?</div>
-                  <p>Lanyu EStudio somos un estudio español de desarrollo indie.</p>
-                  <p>Nuestros trabajos son muy variados, hacemos aplicaciones de negocio, sitios web y videojuegos. Puedes ver más abajo <strong><a href="#portfolio">nuestro portfolio</a></strong>.
-                    Tenemos mucha experiencia en distintos ámbitos y estamos <strong>comprometidos con el idioma español, el código libre y la enseñanza</strong>.
+                  <p>Lanyu EStudio es un estudio español pequeño e independiente.</p>
+                  <p>Tenemos amplia experiencia en variados campos creativos: hacemos aplicaciones de negocio, servicios y sitios web y 
+                    videojuegos como se ve en <strong><a href="#portfolio">nuestro portfolio</a></strong>.
+                    Estamos <strong>comprometidos con el idioma español, el código libre y la enseñanza</strong>.
                     Estamos especializados en el <strong>desarrollo rápido de aplicaciones integrando código libre y con bajos costes de despliegue</strong>.</p>
+                    <!-- <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                    <script type='text/javascript'>kofiwidget2.init('Invítanos a un refresco', 'var(--site-main-color)', 'C0C723ONO');kofiwidget2.draw();</script> -->
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
@@ -115,16 +109,12 @@
                   </div>
                   <div class="row mt-3">
                     <div class="col-sm-4"><strong class="text-uppercase">Sitio web:</strong></div>
-                    <div class="col-sm-8"><a href="http://lanyu.es">http://lanyu.es</a></div>
+                    <div class="col-sm-8"><a href="http://lanyu.es">https://lanyu.es</a></div>
                   </div>
                   <div class="row mt-3">
                     <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
                     <div class="col-sm-8"><a href="mailto:info@lanyu.es">info@lanyu.es</a></div>
                   </div>
-                  <!--<div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                    <div class="col-sm-8">+1718-111-0011</div>
-                  </div>-->
                   <div class="row mt-3">
                     <div class="col-sm-4"><strong class="text-uppercase">Dirección:</strong></div>
                     <div class="col-sm-8">Madrid, España</div>
@@ -139,13 +129,13 @@
           </div>
         </div>
       </div>
-      <div class="section" id="skill">
+      <!-- <div class="section" id="skill">
         <div class="container">
           <div class="h4 text-center mb-4 title">Especialidades</div>
           <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="card-body">
               <div class="row">
-                <!-- <div class="col-md-6">
+                <div class="col-md-6">
                   <div class="progress-container progress-primary"><span class="progress-badge">Videojuegos</span>
                     <div class="progress">
                       <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
@@ -153,473 +143,74 @@
                         aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
                     </div>
                   </div>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="section" id="portfolio">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 ml-auto mr-auto">
+            <div class="col-md-6 mx-auto">
               <div class="h4 text-center mb-4 title">Portfolio</div>
-              <!--<div class="nav-align-center">
+              <div class="nav-align-center">
                 <ul class="nav nav-pills nav-pills-primary" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development"
-                      role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i
-                        class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i
-                        class="fa fa-camera" aria-hidden="true"></i></a></li>
+                  <tab-icon v-for="(tab, index) in tabs" :tab="tab" :index="index" :key="index"></tab-icon>
                 </ul>
-              </div>-->
+              </div>
             </div>
           </div>
           <div class="tab-content gallery mt-5">
-            <div class="tab-pane active" id="web-development">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="https://fatimahispania.com">
-                        <figure class="cc-effect"><img src="imgs/web.webp" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Alojamiento Web</div>
-                            <p class="d-none d-sm-block">Tu web profesional sin preocupaciones.<br>
-                              Visita nuestra última web profesional para bailarinas.</p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="https://printoonline.com/">
-                        <figure class="cc-effect"><img src="imgs/printoonline.webp" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Aplicaciones</div>
-                            <p class="d-none d-sm-block">Tanto de negocio como personales. 
-                              Prueba nuestro último comparador de precios hecho para Boxer Publicidad o
-                              nuestra aplicación de monederos para enseñar a tus hijos.</p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="https://github.com/LanyuEStudio">
-                        <figure class="cc-effect"><img src="imgs/opensource.webp" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Compromiso Open Source</div>
-                            <p class="d-none d-sm-block">Explotamos y desarrollamos Open Source para mejorar la velocidad y precio</p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="https://lanyu-estudio.itch.io/">
-                        <figure class="cc-effect"><img src="imgs/lanyu-itchio.webp" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Videojuegos</div>
-                            <p class="d-none d-sm-block">Nos encanta jugar y hacer juegos. Visita nuestra web itch.io y juega</p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="https://hijosdelspectrum.blogspot.com/">
-                        <figure class="cc-effect"><img src="imgs/blog.webp" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Formación</div>
-                            <p class="d-none d-sm-block">Experiencia docente a nivel postgrado. Ofrecemos cursos gratuitos en nuestros blogs y canal de youtube</p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--<div class="tab-pane" id="graphic-design" role="tabpanel">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Triangle Pattern</div>
-                            <p>Graphic Design</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Abstract Umbrella</div>
-                            <p>Graphic Design</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Cube Surface Texture</div>
-                            <p>Graphic Design</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Abstract Line</div>
-                            <p>Graphic Design</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="Photography" role="tabpanel">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Photoshoot</div>
-                            <p>Photography</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Wedding Photoshoot</div>
-                            <p>Photography</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Beach Photoshoot</div>
-                            <p>Photography</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Nature Photoshoot</div>
-                            <p>Photography</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                </div>
-              </div>
-            </div>-->
+            <portfolio-tab v-for="(tab, index) in tabs" v-bind:tab="tab" :index="index" :key="tab.id">
+              <template #left>
+                <work
+                  v-for="work in tab.left"
+                  :work="work"
+                  :key="work.href">
+                </work>
+              </template>
+              <template #right>
+                <work
+                  v-for="work in tab.right"
+                  :work="work"
+                  :key="work.href">
+                </work>
+              </template>
+            </portfolio-tab>
           </div>
         </div>
       </div>
-      <!--<div class="section" id="experience">
+      <div class="section" id="service">
         <div class="container cc-experience">
-          <div class="h4 text-center mb-4 title">Work Experience</div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>March 2016 - Present</p>
-                  <div class="h5">CreativeM</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Front End Developer</div>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>April 2014 - March 2016</p>
-                  <div class="h5">WebNote</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Web Developer</div>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>April 2013 - February 2014</p>
-                  <div class="h5">WEBM</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Intern</div>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="h4 text-center mb-4 title">Nuestros servicios</div>
+          <service
+            v-for="(s, index) in services"
+            v-bind:service="s"
+            v-bind:key="index"></service>
         </div>
-      </div>-->
-      <!--<div class="section">
-        <div class="container cc-education">
-          <div class="h4 text-center mb-4 title">Education</div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2013 - 2015</p>
-                  <div class="h5">Master's Degree</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Master of Information Technology</div>
-                  <p class="category">University of Computer Science</p>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2009 - 2013</p>
-                  <div class="h5">Bachelor's Degree</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Bachelor of Computer Science</div>
-                  <p class="category">University of Computer Science</p>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2007 - 2009</p>
-                  <div class="h5">High School</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Science and Mathematics</div>
-                  <p class="category">School of Secondary board</p>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis,
-                    tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend
-                    primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros
-                    pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium
-                    molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
-      <!--<div class="section" id="reference">
-        <div class="container cc-reference">
-          <div class="h4 mb-4 text-center title">References</div>
-          <div class="card" data-aos="zoom-in">
-            <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
-                <li data-target="#cc-Indicators" data-slide-to="1"></li>
-                <li data-target="#cc-Indicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg"
-                        alt="Image" />
-                      <div class="h5 pt-2">Aiyana</div>
-                      <p class="category">CEO / WEBM</p>
-                    </div>
-                    <div class="col-lg-10 col-md-9">
-                      <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
-                        porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam
-                        luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper,
-                        laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient
-                        fringilla rhoncus eleifend.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg"
-                        alt="Image" />
-                      <div class="h5 pt-2">Braiden</div>
-                      <p class="category">CEO / Creativem</p>
-                    </div>
-                    <div class="col-lg-10 col-md-9">
-                      <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
-                        porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam
-                        luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper,
-                        laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient
-                        fringilla rhoncus eleifend.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg"
-                        alt="Image" />
-                      <div class="h5 pt-2">Alexander</div>
-                      <p class="category">CEO / Webnote</p>
-                    </div>
-                    <div class="col-lg-10 col-md-9">
-                      <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est
-                        porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam
-                        luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper,
-                        laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient
-                        fringilla rhoncus eleifend.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
-      <!--<div class="section" id="contact">
-        <div class="cc-contact-information" style="background-image: url('imgs/staticmap.png');">
-          <div class="container">
-            <div class="cc-contact">
-              <div class="row">
-                <div class="col-md-9">
-                  <div class="card mb-0" data-aos="zoom-in">
-                    <div class="h4 text-center title">Contact Me</div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <form action="https://formspree.io/your@email.com" method="POST">
-                            <div class="p pb-3"><strong>Feel free to contact me </strong></div>
-                            <div class="row mb-3">
-                              <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i
-                                      class="fa fa-user-circle"></i></span>
-                                  <input class="form-control" type="text" name="name" placeholder="Name"
-                                    required="required" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mb-3">
-                              <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i
-                                      class="fa fa-file-text"></i></span>
-                                  <input class="form-control" type="text" name="Subject" placeholder="Subject"
-                                    required="required" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mb-3">
-                              <div class="col">
-                                <div class="input-group"><span class="input-group-addon"><i
-                                      class="fa fa-envelope"></i></span>
-                                  <input class="form-control" type="email" name="_replyto" placeholder="E-mail"
-                                    required="required" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mb-3">
-                              <div class="col">
-                                <div class="form-group">
-                                  <textarea class="form-control" name="message" placeholder="Your Message"
-                                    required="required"></textarea>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col">
-                                <button class="btn btn-primary" type="submit">Send</button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <p class="mb-0"><strong>Address </strong></p>
-                          <p class="pb-2">140, City Center, New York, U.S.A</p>
-                          <p class="mb-0"><strong>Phone</strong></p>
-                          <p class="pb-2">+1718-111-0011</p>
-                          <p class="mb-0"><strong>Email</strong></p>
-                          <p>anthony@company.com</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
+      </div>
+      <div class="section" id="reference">
+        <reference-section :references="references">
+          <template #indicators>
+            <carousel-indicators v-bind:references="references"></carousel-indicators>
+          </template>
+          <template #references>
+            <reference
+                  v-for="(ref, index) in references"
+                  :reference="ref"
+                  :index="index"
+                  :key="index"></reference>
+          </template>
+        </reference-section>
+      </div>
     </div>
   </div>
   <footer class="footer">
     <div class="container text-center">
-      <a class="btn btn-link" href="http://fb.me/LanyuEStudio"><i class="fa fa-facebook"
-          aria-hidden="true"></i></a>
-      <a class="btn btn-link " href="https://twitter.com/LanyuEStudio"><i class="fa fa-twitter"
-          aria-hidden="true"></i></a>
-      <a class="btn btn-link" href="https://github.com/LanyuEStudio"><i class="fa fa-github"
-          aria-hidden="true"></i></a>
-      <a class="btn btn-link" href="https://hijosdelspectrum.com/"><i class="fa fa-rss"
-        aria-hidden="true"></i></a>
-      <a class="btn btn-link" href="https://www.youtube.com/channel/UCM02UBS6SkPfk_fVg1k_9gg"><i class="fa fa-youtube"
-          aria-hidden="true"></i></a>
+      <footer-rs v-for="rs in rrss"
+        :rs="rs"
+        :key="rs.name"></footer-rs>
     </div>
     <div class="h4 title text-center">Lanyu EStudio</div>
     <div class="text-center text-muted">
@@ -627,13 +218,13 @@
           target="_blank">TemplateFlip</a></p>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="js/now-ui-kit.js?v=1.1.0"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/lanyu.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script defer src="js/now-ui-kit.js?v=1.1.0"></script>
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="js/main.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143855284-1"></script>

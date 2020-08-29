@@ -67,6 +67,10 @@ footer .h4 {
   font-weight: bolder;
 }
 
+.cc-experience .cc-experience-header {
+  padding-right: inherit;
+}
+
 .bg-primary {
   background-color: var(--site-main-color) !important;
 }
@@ -81,10 +85,6 @@ footer .h4 {
   background: var(--site-main-color);
 }
 
-.progress-container.progress-primary .progress {
-  background-color: rgba(var(--site-raw-main-color), 0.2);
-}
-
 .progress-container.progress-primary .progress-value, .progress-container.progress-primary .progress-badge {
 	color: var(--site-main-color);
 }
@@ -97,7 +97,32 @@ a, a:hover, a:focus {
   background-color: var(--site-main-color);
 }
 
+.cc-reference .carousel-indicators .active {
+	background-color: var(--site-main-color);
+}
+
+.cc-reference .carousel-indicators {
+	bottom: -2em;
+}
+
+.nav-pills.nav-pills-primary .nav-item .nav-link.active, .nav-pills.nav-pills-primary .nav-item .nav-link.active:focus, .nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
+	background-color: var(--site-main-color);
+}
+
 :root {
   --site-main-color: rgb(128, 0, 126);
-  --site-raw-main-color: 0, 0, 0;
+}
+
+.service-icon {
+  font-size: 3em;
+}
+
+.gallery figure.cc-effect img,
+.gallery figure.cc-effect .h4 {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.gallery figure.cc-effect:hover figcaption:before {
+  background: rgba(28, 0, 26, 0.8);
 }
