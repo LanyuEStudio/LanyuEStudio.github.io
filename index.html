@@ -7,7 +7,7 @@
   <title>Lanyu EStudio</title>
   <meta name="description" content="Presentación, oferta de servicios y portfolio del estudio español de desarrollo indie. Especializados en APIs, videojuegos, alojamiento web y multimedia." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Lanyu EStudio - Producción y consultoría de productos software, obras culturales y formación." />
+  <meta property="og:title" content="Lanyu EStudio - Producción y consultoría software, obras culturales y formación." />
   <meta property="og:url" content="https://lanyu.es/" />
   <meta property="og:description" content="Presentación, oferta de servicios y portfolio del estudio español de desarrollo indie. Especializados en APIs, videojuegos, alojamiento web y multimedia." />
   <meta property="og:site_name" content="Lanyu EStudio" />
@@ -25,11 +25,19 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <link defer href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="css/main.min.css" rel="stylesheet">
   <link href="css/lanyu.css" rel="stylesheet">
   <link rel="shortcut icon" href="imgs/favicon.webp" />
 
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143855284-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143855284-1');
+  </script>
 </head>
 
 <body id="top">
@@ -93,7 +101,7 @@
                   <div class="h4 mt-0 title">¿Quién somos?</div>
                   <p>Lanyu EStudio es un estudio español pequeño e independiente.</p>
                   <p>Tenemos amplia experiencia en variados campos creativos: hacemos aplicaciones de negocio, servicios y sitios web y 
-                    videojuegos como se ve en <strong><a href="#portfolio">nuestro portfolio</a></strong>.
+                    videojuegos como se ve en <strong><a href="#portfolio">nuestro portfolio</a></strong>.<br/><br/>
                     Estamos <strong>comprometidos con el idioma español, el código libre y la enseñanza</strong>.
                     Estamos especializados en el <strong>desarrollo rápido de aplicaciones integrando código libre y con bajos costes de despliegue</strong>.</p>
                     <!-- <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
@@ -109,7 +117,7 @@
                   </div>
                   <div class="row mt-3">
                     <div class="col-sm-4"><strong class="text-uppercase">Sitio web:</strong></div>
-                    <div class="col-sm-8"><a href="http://lanyu.es">https://lanyu.es</a></div>
+                    <div class="col-sm-8"><a href="https://lanyu.es">https://lanyu.es</a></div>
                   </div>
                   <div class="row mt-3">
                     <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
@@ -218,6 +226,7 @@
           target="_blank">TemplateFlip</a></p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="js/lanyu.js"></script>
   <script defer src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -225,17 +234,6 @@
   <script defer src="js/now-ui-kit.js?v=1.1.0"></script>
   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="js/main.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143855284-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-143855284-1');
-  </script>
-
 </body>
 
 </html>

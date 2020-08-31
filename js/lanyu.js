@@ -42,8 +42,8 @@ Vue.component('portfolio-tab', {
 Vue.component('tab-icon', {
   props: ['tab', 'index'],
   template:
-  `<li class="nav-item">
-    <a class="nav-link mx-2" data-toggle="tab" role="tablist" :href="'#' + tab.id" :class="{ active: index === 0 }">
+  `<li class="nav-item" role="tab">
+    <a class="nav-link mx-2" data-toggle="tab" :href="'#' + tab.id" :class="{ active: index === 0 }">
       <i :class="tab.iconClass" aria-hidden="true"></i>
     </a>
   </li>`
@@ -135,7 +135,7 @@ const tabs = [
       { name: 'API REST', href: 'https://explore.postman.com/43dKUrBDxFN97m', img: { url: 'imgs/postman.webp', alt: 'Documentación APIs Lanyu EStudio en Postman' }, desc: 'Prueba nuestra API RESTful (nivel 3 HATEOAS) sobre Datos Deportivos<span class="d-none d-sm-inline">. Puedes ver las llamadas permitidas en la documentación</span>' }
     ],
     right: [
-      { name: 'Aplicaciones Web', href: 'https://pockets.lanyu.es', img: { url: 'https://lanyu-pocket.firebaseapp.com/ejemplo.jpg', alt: 'Ejemplo de monederos en pockets.lanyu.es' }, desc: 'Aplicaciones tanto de negocio como personales.<br/>Prueba nuestra webapp de monederos para enseñar a tus hijos con un sistema de recompensas' },
+      { name: 'Aplicaciones Web', href: 'https://pockets.lanyu.es', img: { url: 'imgs/pockets.webp', alt: 'Ejemplo de monederos en pockets.lanyu.es' }, desc: 'Aplicaciones tanto de negocio como personales.<br/>Prueba nuestra webapp de monederos para enseñar a tus hijos con un sistema de recompensas' },
       { name: 'Infraestructura Cloud', href: 'https://printoonline.com/', img: { url: 'imgs/printoonline.webp', alt: 'Inicio de sitio web PrintOOnline' }, desc: 'Despliegues en la nube<span class="d-none d-sm-inline">, como nuestro desarrollo para Boxer Publicidad, desplegado</span> en Firebase' },
       { name: 'Integración con Redes Sociales', href: 'https://nomasabusos.es', img: { url: 'imgs/nomasabusos.webp', alt: 'Inicio de nomasabusos.es' }, desc: 'Crea una "Landing page" de entrada a todas tus redes, rápida y vistosa al compartir en ellas y con tu nombre de dominio personalizado' },
       //{ name: 'Formación', href: 'https://hijosdelspectrum.blogspot.com/', img: { url: 'imgs/blog.webp', alt: 'Imagen de blog hijosdelspectrum.com' }, desc: 'Experiencia docente a nivel postgrado. Ofrecemos cursos gratuitos en nuestros blogs y canal de youtube' }
@@ -144,12 +144,12 @@ const tabs = [
   { id: 'games',
     iconClass: 'fa fa-gamepad',
     left: [
-      { name: 'Make Your Adventure', href: 'https://lanyu-estudio.itch.io/make-your-adventure', img: { url: 'https://img.itch.zone/aW1hZ2UvMTM0MTkzLzY0NDAwMy5wbmc=/315x250%23c/kPyGos.png', alt: 'Imagen del juego Make Your Adventure (MYA)' }, desc: 'Convierte tu idea en un videojuego, incluso sin saber programar.<br/>Sólo <strong>Crea, Comparte y Juega</strong>' },
-      { name: 'TragaperraJS', href: 'https://lanyu-estudio.itch.io/jslot-machine-tragaperrajs-', img: { url: 'https://img.itch.zone/aW1hZ2UvMjE1NjM0LzEwMTY5MDIucG5n/315x250%23c/owIucK.png', alt: 'Imagen del juego TragaperraJS' }, desc: 'Una maquina tragaperras adictiva para pasar el rato. Fue el examen de uno de nuestros cursos' }
+      { name: 'Make Your Adventure', href: 'https://lanyu-estudio.itch.io/make-your-adventure', img: { url: 'imgs/mya.webp', alt: 'Imagen del juego Make Your Adventure (MYA)' }, desc: 'Convierte tu idea en un videojuego, incluso sin saber programar.<br/>Sólo <strong>Crea, Comparte y Juega</strong>' },
+      { name: 'TragaperraJS', href: 'https://lanyu-estudio.itch.io/jslot-machine-tragaperrajs-', img: { url: 'imgs/tragaperrajs.webp', alt: 'Imagen del juego TragaperraJS' }, desc: 'Una maquina tragaperras adictiva para pasar el rato. Fue el examen de uno de nuestros cursos' }
     ],
     right: [
-      { name: 'Followers League', href: 'https://lanyu-estudio.itch.io/followers-league', img: { url: 'https://img.itch.zone/aW1nLzM2NTU3NDAucG5n/315x250%23c/Z%2BDrUg.png', alt: 'Imagen del juego Followers League' }, desc: 'Un juego en masa sobre fútbol (crowd-gaming)' },
-      { name: 'Paper Defense', href: 'https://lanyu-estudio.itch.io/paper-defense', img: { url: 'https://img.itch.zone/aW1hZ2UvMjU2OTY3LzEyMzI0MTUucG5n/315x250%23c/nH8BPf.png', alt: 'Imagen del juego Paper Defense' }, desc: 'Un juego de defensa de torre que medirá tu capacidad de escribir a máquina' }
+      { name: 'Followers League', href: 'https://lanyu-estudio.itch.io/followers-league', img: { url: 'imgs/followers-league.webp', alt: 'Imagen del juego Followers League' }, desc: 'Un juego en masa sobre fútbol (crowd-gaming)' },
+      { name: 'Paper Defense', href: 'https://lanyu-estudio.itch.io/paper-defense', img: { url: 'imgs/paper-defense.webp', alt: 'Imagen del juego Paper Defense' }, desc: 'Un juego de defensa de torre que medirá tu capacidad de escribir a máquina' }
     ]
   },
   { id: 'learning',
@@ -175,14 +175,14 @@ const services = [
 ];
 
 const references = [
-  { name: 'Julio Fuentes-Pila', image: { url: 'http://boxerpublicidad.es/wp-content/uploads/2013/09/logo_boxer_publicidad.jpg', description: 'Boxer publicidad'}, category: 'Propietario', content: 'Entendió el proyecto desde el primer momento e incluso ha realizado aportaciones muy importantes al mismo. Lo más llamativo de su trabajo es su forma de rentabilizar el tiempo de programación. Sin duda seguiré contando con él.<br/><a href="https://printoonline.com/">ver proyecto</a>' },
+  { name: 'Julio Fuentes-Pila', image: { url: 'imgs/boxer-publicidad.webp', description: 'Boxer publicidad'}, category: 'Propietario', content: 'Entendió el proyecto desde el primer momento e incluso ha realizado aportaciones muy importantes al mismo. Lo más llamativo de su trabajo es su forma de rentabilizar el tiempo de programación. Sin duda seguiré contando con él.<br/><a href="https://printoonline.com/">ver proyecto</a>' },
   { name: 'blue lander games', image: { url: 'https://img.itch.zone/aW1nLzE4NDQwODgucG5n/80x80%23/jP6QxB.png', description: 'blue lander games'}, category: 'itch.io user', content: "I discovered MYA in the bundle for racial justice, just wanted to say this is a really cool project! The world needs a visual novel maker that's as easy to use as Twine, this has a lot of potential. Hope you're able to keep working on it!<br/><a href=\"https://lanyu-estudio.itch.io/make-your-adventure\">ver juego</a>" },
   { name: 'Gonzalo Kouyoumdjian', image: { url: 'https://media-exp1.licdn.com/dms/image/C4D03AQFRHCynDEZZcQ/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=dIfBtpuORKFtKvzUsijkNOmjU2GFH6kotlmyqVy8ons', description: 'Gonzalo Kouyoumdjian'}, category: 'MBA Finance, MSc Industrial Engineering', content: 'Ismael ha desarrollado el proyecto con mucha rapidez. Al mismo tiempo ha entendido el problema presentado y encontrado las soluciones.' },
-  { name: 'Patty', image: { url: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png', description: 'sin imagen'}, category: 'Alumno curso JavaScript', content: 'Muy buena tu pagina :)<br/><a href="https://www.hijosdelspectrum.com/2017/10/javascript-dom.html">ver post</a>' }
+  { name: 'Patty', image: { url: 'imgs/anonimo.webp', description: 'sin imagen'}, category: 'Alumno curso JavaScript', content: 'Muy buena tu pagina :)<br/><a href="https://www.hijosdelspectrum.com/2017/10/javascript-dom.html">ver post</a>' }
 ];
 
 const rrss = [
-  { name: 'facebook', class: 'fa fa-facebook', url: 'http://fb.me/LanyuEStudio' },
+  { name: 'facebook', class: 'fa fa-facebook', url: 'https://fb.me/LanyuEStudio' },
   { name: 'twitter', class: 'fa fa-twitter', url: 'https://twitter.com/LanyuEStudio' },
   { name: 'Blogger', class: 'fa fa-rss', url: 'https://hijosdelspectrum.com/' },
   { name: 'YouTube', class: 'fa fa-youtube', url: 'https://www.youtube.com/channel/UCM02UBS6SkPfk_fVg1k_9gg' },
