@@ -43,7 +43,7 @@ Vue.component('tab-icon', {
   props: ['tab', 'index'],
   template:
   `<li class="nav-item" role="tab">
-    <a class="nav-link mx-2" data-toggle="tab" :href="'#' + tab.id" :class="{ active: index === 0 }">
+    <a class="nav-link mx-2" data-toggle="tab" :href="'#' + tab.id" :class="{ active: index === 0 }" :aria-label="'Servicio de ' + tab.id">
       <i :class="tab.iconClass" aria-hidden="true"></i>
     </a>
   </li>`
@@ -53,7 +53,9 @@ Vue.component('work', {
   template:
   `<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <a :href="work.href">
-      <figure class="cc-effect"><img class="w-100" :src="work.img.url" :alt="work.img.alt" />
+      <figure class="cc-effect">
+        <img class="lazyload img-ajustada" :data-src="work.img.url" :alt="work.img.alt"
+             :width="work.img.width" :height="work.img.height" />
         <figcaption>
           <div class="h4">{{ work.name }}</div>
           <p v-html="work.desc"></p>
@@ -95,7 +97,8 @@ Vue.component('reference', {
   `<div class="carousel-item" :class="{ active: index === 0 }">
     <div class="row">
       <div class="col-lg-4 cc-reference-header">
-        <img :src="reference.image.url" :alt="reference.image.description" class="rounded mx-auto d-block" />
+        <img :data-src="reference.image.url" :alt="reference.image.description" class="lazyload rounded mx-auto d-block img-ajustada"
+             :width="reference.image.width" :height="reference.image.height" />
         <div class="h5 pt-2 text-center">{{ reference.name }}</div>
         <p class="category text-center">{{ reference.category }}</p>
       </div>
@@ -106,81 +109,96 @@ Vue.component('reference', {
   </div>`
 });
 
+const descripcion = (rs) => {
+  return 'Síguenos en ' + rs.name.charAt(0).toUpperCase() + rs.name.slice(1)
+}
+
 // RRSS
 Vue.component('header-rs', {
   props: ['rs'],
+  methods: {
+    descripcion: descripcion
+  },
   template:
   `<a class="btn btn-default btn-round btn-lg btn-icon d-none d-md-inline-block" rel="tooltip"
-    :href="rs.url"
-    :title="'Síguenos en ' + rs.name.charAt(0).toUpperCase() + rs.name.slice(1)">
+    :href="rs.url" :title="descripcion(rs)" :aria-label="descripcion(rs)">
     <i :class="rs.class"></i>
   </a>`
 });
 
 Vue.component('footer-rs', {
   props: ['rs'],
+  methods: {
+    descripcion: descripcion
+  },
   template:
-  `<a class="btn btn-link" :href="rs.url">
+  `<a class="btn btn-link" :href="rs.url" :title="descripcion(rs)" :aria-label="descripcion(rs)">
     <i :class="rs.class" aria-hidden="true"></i>
   </a>`
 });
 
 const tabs = [
-  { id: 'development',
+  { id: 'transformacion',
+    iconClass: 'fa fa-star',
+    left: [
+      { name: 'Infraestructura Cloud', href: 'https://printoonline.com/', img: { url: 'imgs/printoonline.webp', alt: 'Inicio de sitio web PrintOOnline', width: '450', height: '207' }, desc: 'Despliegues en la nube, como nuestro desarrollo para Boxer Publicidad, desplegado en Firebase' },
+      { name: 'Prototipado rápido', href: 'https://mini-movistar.lanyu.es/', img: { url: 'imgs/mini-movistar.webp', alt: 'Guía de programas de Movistar+ más fácil de usar', width: '450', height: '359' }, desc: 'A veces sólo importa la experiencia de usuario. Un prototipado rápido te permite hacer test A/B para tomar la mejor decisión: compara nuestra web con la oficial de Movistar+' }
+    ],
+    right: [
+      { name: 'Aplicaciones Web', href: 'https://pockets.lanyu.es', img: { url: 'imgs/pockets.webp', alt: 'Ejemplo de monederos en pockets.lanyu.es', width: '450', height: '302' }, desc: 'Aplicaciones tanto de negocio como personales.<br/>Prueba nuestra webapp de monederos para enseñar a tus hijos con un sistema de recompensas' },
+      { name: 'API REST', href: 'https://documenter.getpostman.com/view/9800655/Szme3dFP', img: { url: 'imgs/postman.webp', alt: 'Documentación APIs Lanyu EStudio en Postman', width: '450', height: '188' }, desc: 'Prueba nuestra API RESTful (nivel 3 HATEOAS) sobre Datos Deportivos<span class="d-none d-sm-inline">. Puedes ver las llamadas permitidas en la documentación</span>' }
+    ]
+  },
+  { id: 'desarrollo',
     iconClass: 'fa fa-code',
     left: [
-      { name: 'Web Personalizada', href: 'https://fatima.lanyu.es', img: { url: 'imgs/web.webp', alt: 'Inicio de fatimahispania.com' }, desc: 'Tu web profesional sin preocupaciones.<br/>Visita nuestro trabajo más reciente para bailarinas' },
-      //{ name: 'Videojuegos', href: 'https://lanyu-estudio.itch.io/', img: { url: 'imgs/lanyu-itchio.webp', alt: 'Home de itch.io' }, desc: 'Nos encanta jugar y hacer juegos. Visita nuestra web itch.io y juega' },
-      { name: 'API REST', href: 'https://documenter.getpostman.com/view/9800655/Szme3dFP', img: { url: 'imgs/postman.webp', alt: 'Documentación APIs Lanyu EStudio en Postman' }, desc: 'Prueba nuestra API RESTful (nivel 3 HATEOAS) sobre Datos Deportivos<span class="d-none d-sm-inline">. Puedes ver las llamadas permitidas en la documentación</span>' },
-      { name: 'Prototipado rápido', href: 'https://mini-movistar.lanyu.es/', img: { url: 'imgs/mini-movistar.webp', alt: 'Guía de programas de Movistar+ más fácil de usar' }, desc: 'A veces sólo importa la experiencia de usuario. Un prototipado rápido te permite hacer test A/B para tomar la mejor decisión: compara nuestra web con la oficial de Movistar+' },
-      { name: 'Compromiso Open Source', href: 'https://github.com/LanyuEStudio', img: { url: 'imgs/opensource.webp', alt: 'Logo de open source initiative y github social coding' }, desc: 'Explotamos y desarrollamos código abierto (Open Source) <span class="d-none d-sm-inline">para mejorar la velocidad, mantenimiento y precio de desarrollo</span>' },
+      { name: 'Web Personalizada', href: 'https://fatima.lanyu.es', img: { url: 'imgs/web.webp', alt: 'Inicio de fatimahispania.com', width: '450', height: '404' }, desc: 'Tu web profesional sin preocupaciones.<br/>Visita nuestro trabajo más reciente para bailarinas' },
+      { name: 'Compromiso Open Source', href: 'https://github.com/LanyuEStudio', img: { url: 'imgs/opensource.webp', alt: 'Logo de open source initiative y github social coding', width: '450', height: '188' }, desc: 'Explotamos y desarrollamos código abierto (Open Source) <span class="d-none d-sm-inline">para mejorar la velocidad, mantenimiento y precio de desarrollo</span>' }
     ],
     right: [
-      { name: 'Aplicaciones Web', href: 'https://pockets.lanyu.es', img: { url: 'imgs/pockets.webp', alt: 'Ejemplo de monederos en pockets.lanyu.es' }, desc: 'Aplicaciones tanto de negocio como personales.<br/>Prueba nuestra webapp de monederos para enseñar a tus hijos con un sistema de recompensas' },
-      { name: 'Infraestructura Cloud', href: 'https://printoonline.com/', img: { url: 'imgs/printoonline.webp', alt: 'Inicio de sitio web PrintOOnline' }, desc: 'Despliegues en la nube, como nuestro desarrollo para Boxer Publicidad, desplegado en Firebase' },
-      { name: 'Integración con Redes Sociales', href: 'https://nomasabusos.github.io/', img: { url: 'imgs/nomasabusos.webp', alt: 'Inicio de nomasabusos.es' }, desc: 'Crea una "Landing page" de entrada a todas tus redes, rápida y vistosa al compartir en ellas y con tu nombre de dominio personalizado' },
-      { name: 'Los mejores blogs', href: 'https://woman-gaze.lanyu.es', img: { url: 'imgs/woman-gaze.webp', alt: 'Blogs fluidos y atractivos para conectar con tu audiencia' }, desc: 'Navegación fluida y aspecto atractivo para conectar mejor con tu audiencia' },
-      //{ name: 'Formación', href: 'https://hijosdelspectrum.blogspot.com/', img: { url: 'imgs/blog.webp', alt: 'Imagen de blog hijosdelspectrum.com' }, desc: 'Experiencia docente a nivel postgrado. Ofrecemos cursos gratuitos en nuestros blogs y canal de youtube' }
+      { name: 'Integración con Redes Sociales', href: 'https://nomasabusos.github.io/', img: { url: 'imgs/nomasabusos.webp', alt: 'Inicio de nomasabusos.es', width: '450', height: '280' }, desc: 'Crea una "Landing page" de entrada a todas tus redes, rápida y vistosa al compartir en ellas y con tu nombre de dominio personalizado' },
+      { name: 'Los mejores blogs', href: 'https://woman-gaze.lanyu.es', img: { url: 'imgs/woman-gaze.webp', alt: 'Blogs fluidos y atractivos para conectar con tu audiencia', width: '450', height: '478' }, desc: 'Navegación fluida y aspecto atractivo para conectar mejor con tu audiencia' }
     ]
   },
-  { id: 'games',
+  { id: 'videojuegos',
     iconClass: 'fa fa-gamepad',
     left: [
-      { name: 'Make Your Adventure', href: 'https://lanyu-estudio.itch.io/make-your-adventure', img: { url: 'imgs/mya.webp', alt: 'Imagen del juego Make Your Adventure (MYA)' }, desc: 'Convierte tu idea en un videojuego, incluso sin saber programar.<br/>Sólo <strong>Crea, Comparte y Juega</strong>' },
-      { name: 'TragaperraJS', href: 'https://lanyu-estudio.itch.io/jslot-machine-tragaperrajs-', img: { url: 'imgs/tragaperrajs.webp', alt: 'Imagen del juego TragaperraJS' }, desc: 'Una maquina tragaperras adictiva para pasar el rato. Fue el examen de uno de nuestros cursos' }
+      { name: 'Make Your Adventure', href: 'https://lanyu-estudio.itch.io/make-your-adventure', img: { url: 'imgs/mya.webp', alt: 'Imagen del juego Make Your Adventure (MYA)', width: '315', height: '250' }, desc: 'Convierte tu idea en un videojuego, incluso sin saber programar.<br/>Sólo <strong>Crea, Comparte y Juega</strong>' },
+      { name: 'TragaperraJS', href: 'https://lanyu-estudio.itch.io/jslot-machine-tragaperrajs-', img: { url: 'imgs/tragaperrajs.webp', alt: 'Imagen del juego TragaperraJS', width: '315', height: '250' }, desc: 'Una maquina tragaperras adictiva para pasar el rato. Fue el examen de uno de nuestros cursos' }
     ],
     right: [
-      { name: 'Followers League', href: 'https://lanyu-estudio.itch.io/followers-league', img: { url: 'imgs/followers-league.webp', alt: 'Imagen del juego Followers League' }, desc: 'Un juego en masa sobre fútbol (crowd-gaming)' },
-      { name: 'Paper Defense', href: 'https://lanyu-estudio.itch.io/paper-defense', img: { url: 'imgs/paper-defense.webp', alt: 'Imagen del juego Paper Defense' }, desc: 'Un juego de defensa de torre que medirá tu capacidad de escribir a máquina' }
+      { name: 'Followers League', href: 'https://lanyu-estudio.itch.io/followers-league', img: { url: 'imgs/followers-league.webp', alt: 'Imagen del juego Followers League', width: '315', height: '250' }, desc: 'Un juego en masa sobre fútbol (crowd-gaming)' },
+      { name: 'Paper Defense', href: 'https://lanyu-estudio.itch.io/paper-defense', img: { url: 'imgs/paper-defense.webp', alt: 'Imagen del juego Paper Defense', width: '315', height: '250' }, desc: 'Un juego de defensa de torre que medirá tu capacidad de escribir a máquina' }
     ]
   },
-  { id: 'learning',
+  { id: 'formacion',
     iconClass: 'fa fa-graduation-cap',
     left: [
-      { name: 'Formación personalizada', href: 'mailto:info@lanyu.es', img: { url: 'imgs/classroom.webp', alt: 'Aula con alumnos' }, desc: 'Para particulares y empresas tanto presenciales como online. <strong>Solicita tu clase con profesor</strong> especializado y dedicado (no sólo entrega de contenidos)' },
-      { name: 'Java Fundamentos (JAZZ)', href: 'https://hijosdelspectrum.blogspot.com/p/curso-java-de-zero-zen-jazz-descripcion.html', img: { url: 'imgs/java.webp', alt: 'Logotipo Java' }, desc: 'Aprende el lenguaje de iniciación a la programación por excelencia hasta alcanzar resultados empresariales' },
-      { name: 'Spring Framework', href: 'https://hijosdelspectrum.blogspot.com/p/spring-framework-crear-una-api.html', img: { url: 'imgs/spring.webp', alt: 'Logotipo Spring Framework' }, desc: 'Aprende el framework de desarrollo de servicios web más extendido a nivel profesional' }
+      { name: 'Formación personalizada', href: 'mailto:info@lanyu.es', img: { url: 'imgs/classroom.webp', alt: 'Aula con alumnos', width: '450', height: '302' }, desc: 'Para particulares y empresas tanto presenciales como online. <strong>Solicita tu clase con profesor</strong> especializado y dedicado (no sólo entrega de contenidos)' },
+      { name: 'Java Fundamentos (JAZZ)', href: 'https://hijosdelspectrum.blogspot.com/p/curso-java-de-zero-zen-jazz-descripcion.html', img: { url: 'imgs/java.webp', alt: 'Logotipo Java', width: '450', height: '250' }, desc: 'Aprende el lenguaje de iniciación a la programación por excelencia hasta alcanzar resultados empresariales' },
+      { name: 'Spring Framework', href: 'https://hijosdelspectrum.blogspot.com/p/spring-framework-crear-una-api.html', img: { url: 'imgs/spring.webp', alt: 'Logotipo Spring Framework', width: '450', height: '336' }, desc: 'Aprende el framework de desarrollo de servicios web más extendido a nivel profesional' }
     ],
     right: [
-      { name: 'JavaScript', href: 'https://hijosdelspectrum.blogspot.com/p/blog-page.html', img: { url: 'imgs/js.webp', alt: 'Logotipo JavaScript' }, desc: 'Aprende lo necesario para poder crear aplicaciones con el lenguaje nativo de la web' },
+      { name: 'JavaScript', href: 'https://hijosdelspectrum.blogspot.com/p/blog-page.html', img: { url: 'imgs/js.webp', alt: 'Logotipo JavaScript', width: '450', height: '339' }, desc: 'Aprende lo necesario para poder crear aplicaciones con el lenguaje nativo de la web' },
       { name: 'Trucos variados', href: 'https://hijosdelspectrum.blogspot.com/2012/09/css-botones-redondeados-con-brillo.html', img: { url: 'https://cdn.pixabay.com/photo/2020/03/05/17/35/tips-4905013_960_720.jpg', alt: 'Tips and Tricks' }, desc: 'Trucos variados sobre programación, software, herramientas, etc...<br/><strong>Permanece conectado!</strong>' }
     ]
   }
 ];
 
 const services = [
-  { title: 'Web Services', header: 'Microservicios & API REST', class: 'fa fa-code', body: 'Realizamos <a href="https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional">API REST</a> nivel 3 (<a href="https://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>) implementado habitualmente usando el nivel de abstracción más alto de <a href="https://spring.io/projects/spring-framework">Spring Framework</a> sobre Spring Data. Esto proporciona la mayor flexibilidad, escalabilidad y reutilización en una infraestructura ágil basada en <a href="https://www.redhat.com/es/topics/microservices">microservicios</a>.<br/><strong>¡Rompe tu monolito y convierte tu empresa realmente a procesos de negocio!<strong>' },
+  { title: 'Impulsa tu negocio', header: 'Asesores en transformación digital', class: 'fa fa-star', body: 'Nos dedicamos a trabajar en tu proceso de toma de decisiones para conseguir que tu organización sea una <strong>referencia en el sector</strong>. Ofrecemos una <strong>solución integral</strong> porque podemos colaborar en la elaboración de tu estrategia de comunicación y de desarrollo de negocio y proporcionar la tecnología que sea necesaria para alcanzar el objetivo. Conseguirás rápidamente un gran retorno de la inversión, podrás reorganizar tus recursos, sobretodo los de personal, y <strong>mejorarás tu posición y oferta de producto o servicio en el sector</strong>.' },
   { title: 'Videojuegos', header: 'La cultura que más crece y engancha', class: 'fa fa-gamepad', body: 'Apoyándonos en proyectos con grandes comunidades de software libre como <a href="https://libgdx.badlogicgames.com/">libgdx</a>, desarrollamos librerías de código abierto para crear rápidamente videojuegos que vayan aportando capas reutilizables para videojuegos más complicados (ECS, networking, diálogos, etc...)' },
-  { title: 'Websites', header: 'Páginas web personalizadas asequibles', class: 'fa fa-code', body: 'Si no quieres tener otro clon de página web usando un servicio gratuito como <a href="https://es.wix.com/wix">wix</a> nos puedes pedir tu página web personalizada para tener un acabado profesional que alcance las mejores métricas (SEO, rendimiento, buenas prácticas,...). Esto hará que esté mejor posicionada y atraiga más usuarios. Además, te proporcionamos acceso a métricas para que puedas adaptarte a lo que quieren tus visitantes.' },
+  { title: 'Websites', header: 'Páginas web personalizadas asequibles', class: 'fa fa-code', body: 'Si quieres diferenciar tu web de las demás que usan servicios gratuitos (como <a href="https://es.wix.com/wix">wix</a>) nos puedes pedir tu página web personalizada para tener un acabado profesional que alcance las mejores métricas (SEO, rendimiento, buenas prácticas,...). Esto hará que esté mejor posicionada y atraiga más usuarios. Además, te proporcionamos acceso a métricas para que puedas adaptarte a lo que quieren tus visitantes.' },
+  { title: 'Web Services', header: 'Microservicios & API REST', class: 'fa fa-star', body: 'Realizamos <a href="https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional">API REST</a> nivel 3 (<a href="https://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>) implementado habitualmente usando el nivel de abstracción más alto de <a href="https://spring.io/projects/spring-framework">Spring Framework</a> sobre Spring Data. Esto proporciona la mayor flexibilidad, escalabilidad y reutilización en una infraestructura ágil basada en <a href="https://www.redhat.com/es/topics/microservices">microservicios</a>.<br/><strong>¡Rompe tu monolito y convierte tu empresa realmente a procesos de negocio!<strong>' },
   { title: 'Formación', header: 'Larga experiencia en formación', class: 'fa fa-graduation-cap', body: 'Tenemos mucha experiencia formando personal tanto en la administración pública como en empresa. Prueba los <a href="https://hijosdelspectrum.blogspot.com/p/blog-page.html"><strong>cursos online gratuitos</strong> que compartimos en nuestro blog</a> y contrata cursos especializados particularmente o para tus empleados. <strong><u>El mejor contenido gratuito en español</u></strong>.' },
   { title: 'Open Source', header: 'Amamos la mentalidad Open Source', class: 'fa fa-code', body: 'Liberamos código (en <a href="https://github.com/LanyuEStudio">nuestro repositorio de github</a>) para que, igualmente que nos aprovechamos del trabajo de otros para abaratar costes de desarrollo y mejorar el mantenimiento, podamos retornar valor a la comunidad. También hacemos donaciones a los mejores proyectos (¡no sólo de código vive el hombre!) y <a href="https://ko-fi.com/lanyuestudio">aceptamos micromecenazgo</a> para ello.' }
 ];
 
 const references = [
-  { name: 'Julio Fuentes-Pila', image: { url: 'imgs/boxer-publicidad.webp', description: 'Boxer publicidad'}, category: 'Propietario', content: 'Entendió el proyecto desde el primer momento e incluso ha realizado aportaciones muy importantes al mismo. Lo más llamativo de su trabajo es su forma de rentabilizar el tiempo de programación. Sin duda seguiré contando con él.<br/><a href="https://printoonline.com/">ver proyecto</a>' },
-  { name: 'blue lander games', image: { url: 'https://img.itch.zone/aW1nLzc1NDEzMjgucG5n/80x80%23/aD8nSN.png', description: 'blue lander games'}, category: 'itch.io user', content: "I discovered MYA in the bundle for racial justice, just wanted to say this is a really cool project! The world needs a visual novel maker that's as easy to use as Twine, this has a lot of potential. Hope you're able to keep working on it!<br/><a href=\"https://lanyu-estudio.itch.io/make-your-adventure\">ver juego</a>" },
-  { name: 'Gonzalo Kouyoumdjian', image: { url: 'https://media-exp1.licdn.com/dms/image/C4D03AQFRHCynDEZZcQ/profile-displayphoto-shrink_200_200/0/1584286811833?e=1654732800&v=beta&t=3BUDcJxo0600O-rH2T-Vwvrlp1wSTnepYyCv_Q7lOgA', description: 'Gonzalo Kouyoumdjian'}, category: 'MBA Finance, MSc Industrial Engineering', content: 'Ismael ha desarrollado el proyecto con mucha rapidez. Al mismo tiempo ha entendido el problema presentado y encontrado las soluciones.' },
-  { name: 'Patty', image: { url: 'imgs/anonimo.webp', description: 'sin imagen'}, category: 'Alumno curso JavaScript', content: 'Muy buena tu pagina :)<br/><a href="https://hijosdelspectrum.blogspot.com/2017/10/javascript-dom.html">ver post</a>' }
+  { name: 'Julio Fuentes-Pila', image: { url: 'imgs/boxer-publicidad.webp', description: 'Boxer publicidad', width: '179', height: '91'}, category: 'Propietario', content: 'Entendió el proyecto desde el primer momento e incluso ha realizado aportaciones muy importantes al mismo. Lo más llamativo de su trabajo es su forma de rentabilizar el tiempo de programación. Sin duda seguiré contando con él.<br/><a href="https://printoonline.com/">ver proyecto</a>' },
+  { name: 'blue lander media', image: { url: 'imgs/blue-lander.webp', description: 'blue lander media', width: '120', height: '120'}, category: 'itch.io user', content: "I discovered MYA in the bundle for racial justice, just wanted to say this is a really cool project! The world needs a visual novel maker that's as easy to use as Twine, this has a lot of potential. Hope you're able to keep working on it!<br/><a href=\"https://lanyu-estudio.itch.io/make-your-adventure\">ver juego</a>" },
+  { name: 'Gonzalo Kouyoumdjian', image: { url: 'imgs/gonzalo.webp', description: 'Gonzalo Kouyoumdjian', width: '120', height: '120'}, category: 'MBA Finance, MSc Industrial Engineering', content: 'Ismael ha desarrollado el proyecto con mucha rapidez. Al mismo tiempo ha entendido el problema presentado y encontrado las soluciones.' },
+  { name: 'Patty', image: { url: 'imgs/anonimo.webp', description: 'sin imagen', width: '120', height: '120'}, category: 'Alumno curso JavaScript', content: 'Muy buena tu pagina :)<br/><a href="https://hijosdelspectrum.blogspot.com/2017/10/javascript-dom.html">ver post</a>' }
 ];
 
 const rrss = [
