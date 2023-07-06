@@ -44,6 +44,15 @@ body {
   text-shadow: .2rem .2rem .4rem #000;
 }
 
+.icono-en-opcion {
+	height: 50%;
+	margin-top: 25%;
+}
+
+#portfolio a {
+  padding: 0;
+}
+
 /* footer social */
 footer a.btn, footer a.btn:hover { color: inherit; font-size: 1.6rem;}
 footer .title { border: none; }

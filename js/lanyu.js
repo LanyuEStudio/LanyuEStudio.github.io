@@ -44,7 +44,7 @@ Vue.component('tab-icon', {
   template:
   `<li class="nav-item" role="tab">
     <a class="nav-link mx-2" data-toggle="tab" :href="'#' + tab.id" :class="{ active: index === 0 }" :aria-label="'Servicio de ' + tab.id">
-      <i :class="tab.iconClass" aria-hidden="true"></i>
+      <i :class="tab.iconClass" class="icono-en-opcion" aria-hidden="true"></i>
     </a>
   </li>`
 });
@@ -122,7 +122,7 @@ Vue.component('header-rs', {
   template:
   `<a class="btn btn-default btn-round btn-lg btn-icon d-none d-md-inline-block" rel="tooltip"
     :href="rs.url" :title="descripcion(rs)" :aria-label="descripcion(rs)">
-    <i :class="rs.class"></i>
+    <i :class="rs.class" class="icono-en-opcion"></i>
   </a>`
 });
 
