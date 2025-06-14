@@ -141,7 +141,7 @@ const tabs = [
   { id: 'transformacion',
     iconClass: 'fa fa-star',
     left: [
-      { name: 'Infraestructura Cloud', href: 'https://printoonline.com/', img: { url: 'imgs/printoonline.webp', alt: 'Inicio de sitio web PrintOOnline', width: '450', height: '207' }, desc: 'Despliegues en la nube, como nuestro desarrollo para Boxer Publicidad, desplegado en Firebase' },
+      { name: 'Infraestructura Cloud', href: 'https://printoonline.lanyu.es/', img: { url: 'imgs/printoonline.webp', alt: 'Inicio de sitio web PrintOOnline', width: '450', height: '207' }, desc: 'Despliegues en la nube, como nuestro desarrollo para Boxer Publicidad, desplegado en Firebase' },
       { name: 'Prototipado rápido', href: 'https://mini-movistar.lanyu.es/', img: { url: 'imgs/mini-movistar.webp', alt: 'Guía de programas de Movistar+ más fácil de usar', width: '450', height: '359' }, desc: 'A veces sólo importa la experiencia de usuario. Un prototipado rápido te permite hacer test A/B para tomar la mejor decisión: compara nuestra web con la oficial de Movistar+' }
     ],
     right: [
@@ -195,7 +195,7 @@ const services = [
 ];
 
 const references = [
-  { name: 'Julio Fuentes-Pila', image: { url: 'imgs/boxer-publicidad.webp', description: 'Boxer publicidad', width: '179', height: '91'}, category: 'Propietario', content: 'Entendió el proyecto desde el primer momento e incluso ha realizado aportaciones muy importantes al mismo. Lo más llamativo de su trabajo es su forma de rentabilizar el tiempo de programación. Sin duda seguiré contando con él.<br/><a href="https://printoonline.com/">ver proyecto</a>' },
+  { name: 'Julio Fuentes-Pila', image: { url: 'imgs/boxer-publicidad.webp', description: 'Boxer publicidad', width: '179', height: '91'}, category: 'Propietario', content: 'Entendió el proyecto desde el primer momento e incluso ha realizado aportaciones muy importantes al mismo. Lo más llamativo de su trabajo es su forma de rentabilizar el tiempo de programación. Sin duda seguiré contando con él.<br/><a href="https://printoonline.lanyu.es/">ver proyecto</a>' },
   { name: 'blue lander media', image: { url: 'imgs/blue-lander.webp', description: 'blue lander media', width: '120', height: '120'}, category: 'itch.io user', content: "I discovered MYA in the bundle for racial justice, just wanted to say this is a really cool project! The world needs a visual novel maker that's as easy to use as Twine, this has a lot of potential. Hope you're able to keep working on it!<br/><a href=\"https://lanyu-estudio.itch.io/make-your-adventure\">ver juego</a>" },
   { name: 'Gonzalo Kouyoumdjian', image: { url: 'imgs/gonzalo.webp', description: 'Gonzalo Kouyoumdjian', width: '120', height: '120'}, category: 'MBA Finance, MSc Industrial Engineering', content: 'Ismael ha desarrollado el proyecto con mucha rapidez. Al mismo tiempo ha entendido el problema presentado y encontrado las soluciones.' },
   { name: 'Patty', image: { url: 'imgs/anonimo.webp', description: 'sin imagen', width: '120', height: '120'}, category: 'Alumno curso JavaScript', content: 'Muy buena tu pagina :)<br/><a href="https://hijosdelspectrum.blogspot.com/2017/10/javascript-dom.html">ver post</a>' }
